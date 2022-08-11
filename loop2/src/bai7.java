@@ -9,7 +9,7 @@ public class bai7 {
         int j = 0;
         numbers = scanner.nextInt();
         for ( n = 2 ; n < 1000 ; n++) {
-            if (count < 100) {
+            if (count < numbers) {
                 for (int i = 1; i <= n; i++) {
                     if (n % i == 0) {
                         j++;

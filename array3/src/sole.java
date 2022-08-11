@@ -5,7 +5,7 @@ public class sole {
         int sole = 0;
         int[] array =  {22,5,7,2,8,5,7,3,23,6,8,9,3,6,5,234,6,78,46,23,423,4315,6,9,8,3,7,45,4,3,4,3,5,5,5,5,7,7,7,7,7,5,5,7,7};
         for (int i = 0 ; i < array.length ; i+=2) {
-            if (array[i] % 2 ==0) {
+            if (array[i] % 2 !=0) {
                 sole = array[i];
             }
         }
@@ -30,6 +30,6 @@ public class sole {
               }
         }
         int number = array[index];
-        System.out.printf("Số xuất hiện nhiều nhất là %d\n", number);
+        System.out.printf("Số xuất hiện nhiều nhất là %d với số lần xuất hiện là %d\n", number,max);
     }
 }
