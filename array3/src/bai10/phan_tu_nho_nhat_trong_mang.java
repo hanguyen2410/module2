@@ -1,22 +1,22 @@
-package bai9;
+package bai10;
 
 import java.util.Scanner;
 
-public class phan_tu_lon_nhat_trong_mang_hai_chieu {
+public class phan_tu_nho_nhat_trong_mang {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[][] array = new int[2][5];
-        int max = 0;
+        int min = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.println("Enter element " + (j+1) + " in array"+ (i+1)+" :");
                 array[i][j] = scanner.nextInt();
-                if(max <array[i][j]){
-                    max = array[i][j];
+                min = array[0][0];
+                if(min > array[i][j]){
+                    min = array[i][j];
                 }
-
             }
         }
-        System.out.printf("Số lớn nhất trong mảng hai chiều là : %d ",max);
+        System.out.printf("Số nhỏ nhất trong mảng hai chiều là : %d ",min);
     }
 }
