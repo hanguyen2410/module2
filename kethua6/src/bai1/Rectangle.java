@@ -3,42 +3,53 @@ package bai1;
 public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
-    public Rectangle(){}
-    public Rectangle(double width, double length){
+
+    public Rectangle() {
+    }
+
+    public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
     }
-    public Rectangle(double width , double length, String color, boolean filled){
+
+    public Rectangle(double width, double length, String color, boolean filled) {
         super(color, filled);
         this.width = width;
         this.length = length;
     }
-    public double getWidth(){
+
+    public double getWidth() {
         return width;
     }
-    public double getLength(){
+
+    public double getLength() {
         return length;
     }
-    public void setWidth(double width){
+
+    public void setWidth(double width) {
         this.width = width;
     }
-    public void setLength(double length){
+
+    public void setLength(double length) {
         this.length = length;
     }
-    public double getArea(){
+
+    public double getArea() {
         return width * this.length;
     }
-    public double getPerimeter(){
+
+    public double getPerimeter() {
         return 2 * (width + this.length);
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "A Rectangle with tidth = "
                 + getWidth()
                 + " and length = "
                 + getLength()
-                +", Which is a subclass of "
-                +super.toString();
+                + ", Which is a subclass of "
+                + super.toString();
     }
 
 }
