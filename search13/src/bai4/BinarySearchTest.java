@@ -15,7 +15,21 @@ public class BinarySearchTest {
         }
         BubbleSort(list);
         System.out.println("Your List is : " + Arrays.toString(list));
-
+        
+    }
+    public static int binarySearch(int[] array , int left , int right, int value){
+        int middle = (left + right) / 2;
+        while(right > left){
+            if(array[middle] == value){
+                return middle;
+            }
+            else if(value > array[middle]){
+                left = middle +1;
+            } else {
+                right = middle -1;
+            }
+        }
+        return middle;
     }
     public static void BubbleSort(int[] list){
         boolean needNextPass = true;
