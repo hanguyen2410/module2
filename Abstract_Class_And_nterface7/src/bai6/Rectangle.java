@@ -1,7 +1,9 @@
-package bai5;
+package bai6;
 
-public class Rectangle extends Shape implements Resizeable {
-    protected double width = 1.0;
+import bai6.Colorable;
+
+public  class Rectangle extends Shape {
+    double width = 1.0;
     public double length = 1.0;
 
     public Rectangle() {
@@ -56,4 +58,9 @@ public class Rectangle extends Shape implements Resizeable {
         this.length *= percent;
     }
 
+
+    @Override
+    public void howToColor() {
+        System.out.println("color all four sides");
+    }
 }

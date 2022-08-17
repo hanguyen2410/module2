@@ -1,7 +1,9 @@
-package bai5;
+package bai6;
 
-public abstract class Shape implements Resizeable {
-    protected String color = "green";
+import bai5.Resizeable;
+
+public abstract class Shape implements Colorable {
+    public String color = "green";
     private boolean filled = true;
 
     public Shape() {
