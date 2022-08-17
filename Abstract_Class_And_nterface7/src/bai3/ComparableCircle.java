@@ -1,8 +1,8 @@
 package bai3;
 
+import bai3.Circle;
 
-
-public class ComparableCircle extends Circle
+public  class ComparableCircle extends Circle
         implements Comparable<ComparableCircle> {
     public ComparableCircle() {
 
