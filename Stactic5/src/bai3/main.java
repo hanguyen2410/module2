@@ -5,5 +5,6 @@ public class main {
         TestCircle Circle = new TestCircle();
         Circle.getRadius();
         Circle.getArea();
+        System.out.println("The Circle is " + Circle.getRadius() + " Color is " + Circle.getArea());
     }
 }
