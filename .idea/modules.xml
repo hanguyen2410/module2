@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/module2.iml" filepath="$PROJECT_DIR$/.idea/module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/sapxep14/sapxep14.iml" filepath="$PROJECT_DIR$/sapxep14/sapxep14.iml" />
       <module fileurl="file://$PROJECT_DIR$/search13/search13.iml" filepath="$PROJECT_DIR$/search13/search13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test_Tdd10/test/test.iml" filepath="$PROJECT_DIR$/Test_Tdd10/test/test.iml" />
     </modules>
   </component>
 </project>
