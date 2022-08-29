@@ -15,19 +15,20 @@ public class MyListTest {
         listNumber.add(9, 10);
         listNumber.add(17, 15);
         listNumber.printMyList();
-        System.out.println(listNumber.get(5));
-        if (listNumber.contains(5))
-
-            System.out.println("Yes!");
-        else
-            System.out.println("No!");
-
-
-        if (listNumber.contains(55))
-            System.out.println("Yes!");
-        else
-            System.out.println("No!");
-
-
+//        System.out.println(listNumber.get(5));
+//        if (listNumber.contains(5))
+//
+//            System.out.println("Yes!");
+//        else
+//            System.out.println("No!");
+//
+//
+//        if (listNumber.contains(55))
+//            System.out.println("Yes!");
+//        else
+//            System.out.println("No!");
+//
+        listNumber.remove(6);
+        listNumber.printMyList();
     }
 }

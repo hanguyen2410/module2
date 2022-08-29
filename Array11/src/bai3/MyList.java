@@ -24,7 +24,7 @@ public class MyList<E> {
     }
 
     private void checkIndex(int index) {
-        if (index < 0 || index > size) {
+        if (index < 0 || index > DEFAULT_CAPACITY) {
             throw new IndexOutOfBoundsException("index" + index + "out of bounds");
         }
     }
@@ -32,11 +32,11 @@ public class MyList<E> {
     public E remove(int index) {
         checkIndex(index);
         E temp = (E) elements[index];
-        for (int i = index; i < size; i++) {
-            elements[i] = elements[index + 1];
+        for (int i = index; i < DEFAULT_CAPACITY; i++) {
+            elements[i] = elements[i + 1];
         }
-        elements[size - 1] = null;
-        size--;
+        elements[DEFAULT_CAPACITY - 1] = null;
+        DEFAULT_CAPACITY--;
         return temp;
     }
 
