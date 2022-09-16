@@ -10,7 +10,7 @@ public class FoodManager {
     public FoodManager() {
     }
 
-    public void add(int id ,String name, int price) {
+    public void add(int id, String name, int price) {
         for (int i = 0; i < foods.size(); i++) {
             if (id == foods.get(i).getId()) {
                 System.out.println("ID đã tồn tại!! Vui lòng nhập id khác");
@@ -42,14 +42,14 @@ public class FoodManager {
     public void findFoodName(String name) {
         ArrayList<Food> findFoods = new ArrayList<>();
         int count = 0;
-        for(int i = 0; i < foods.size(); i++) {
-            if(foods.get(i).getName().toUpperCase().contains(name.toUpperCase())){
+        for (int i = 0; i < foods.size(); i++) {
+            if (foods.get(i).getName().toUpperCase().contains(name.toUpperCase())) {
                 System.out.println(foods.get(i));
                 count++;
             }
         }
-        if(count ==0)
-        System.out.println("dish is not on the list");
+        if (count == 0)
+            System.out.println("dish is not on the list");
     }
 
 

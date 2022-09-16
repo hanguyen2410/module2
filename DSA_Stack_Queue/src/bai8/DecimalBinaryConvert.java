@@ -8,14 +8,15 @@ public class DecimalBinaryConvert {
         Stack<Integer> stack = new Stack<>();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Your Number: ");
-        int num = sc.nextInt();
-        while (num > 0) {
-            int temp = num % 2;
+        int number = Integer.parseInt(sc.nextLine());
+        while (number > 0) {
+            int temp = number % 2;
             stack.push(temp);
-            num = num / 2;
+            number = number / 2;
         }
         System.out.println("Decimal Binary is : ");
-        for (int i = 0; i < stack.size(); i++) {
+        int n = stack.size();
+        for (int i = 0; i < n; i++) {
             System.out.print(stack.pop());
         }
     }
